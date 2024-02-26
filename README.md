@@ -17,7 +17,7 @@ The methodology was validated using two datasets, each involving participants pe
 
 
 ## Experimental Results
-![Comparison of F1-score and training users for USI-HEAR and OCOSense](images/table.png)
+<img src="images/table.png" alt="Comparison of F1-score and training users for USI-HEAR and OCOSense" width="700"/>
 
 
 ## Requirements
