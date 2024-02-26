@@ -6,8 +6,8 @@ This repository complements the study ['Multi-frequency Federated Learning for H
 
 
 ## Model Architecture
-![Encoder Architecture for a Single Input Channel](images/encoder.png)
-![Multi-frequency Model Architecture to Handle Low and Full Battery Mode Devices](images/model_architecture.png)
+<img src="images/encoder.png" alt="Encoder Architecture for a Single Input Channel" width="500"/>
+<img src="images/model_architecture.png" alt="Multi-frequency Model Architecture to Handle Low and Full Battery Mode Devices" width="500"/>
 
 
 ## Datasets
