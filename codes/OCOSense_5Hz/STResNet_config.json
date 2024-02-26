@@ -1,0 +1,24 @@
+{
+    "num_channels": 3, 
+    "signal_size": [500, 500, 500], 
+    "sampling_rate": [1000, 1000, 1000],
+    "fft_win_length": [64,64,64], 
+    "hop_length": [32,32,32],
+    
+    "num_res_blocks": 4,
+    "num_filters": 16,
+    "num_filters_spectro": 32, 
+    "cnn_per_res": 2, 
+    "kernel_sizes": [5, 5], 
+    "max_filters": 32, 
+    "pool_size": 3,
+    "pool_stride_size": 2,
+    "dense_neurons_spectro": 32,
+    "dense_neurons": [64, 64],
+
+    "drop_rate": 0.2,
+    "l2_lambda": 0.001,
+    "learning_rate": 0.0001,
+    "learning_decay": 0.0001
+}
+
