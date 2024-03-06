@@ -3,15 +3,16 @@ from tensorflow.keras.losses import SparseCategoricalCrossentropy
 import numpy as np
 import os
 
+
 # VARIABLES
 N_REPETITIONS = 10
 USE_GPU = True
 GPU_DEVICE = 1 #GPU id
-LEARNING_RATE = 0.00005
+LEARNING_RATE = 0.0001
 LEARNING_RATE2 = 0.00005
 BATCH_SIZE = 256
-EP_SCHEDULER = 1000
-NUM_CPUS = 4
+EP_SCHEDULER = 10000 # not used
+NUM_CPUS = 10
 NUM_EPOCHS = 500
 NUM_THREADS = NUM_CPUS
 PATIENCE = 150

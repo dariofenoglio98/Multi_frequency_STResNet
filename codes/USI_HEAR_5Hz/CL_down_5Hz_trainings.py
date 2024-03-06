@@ -54,9 +54,9 @@ utils.set_session(cfg.USE_GPU, cfg.GPU_DEVICE)
 # LOAD DATA
 print('\nLoading data...')
 # USI-HEAR
-windows1 = np.load("../../datasets/USI-HEAR_windows_AG.npy")
-clients1 = np.load("../../datasets/USI-HEAR_clients.npy")
-labels1 = np.load("../../datasets/USI-HEAR_labels_combined.npy")
+windows1 = np.load("../../datasets/USI-HEAR_windows_5.npy")
+clients1 = np.load("../../datasets/USI-HEAR_clients_5.npy")
+labels1 = np.load("../../datasets/USI-HEAR_labels_5.npy")
 
 # Print data shape
 print('USI-HEAR shape: {}  {} {} {}'.format(windows1.shape, clients1.shape, labels1.shape,np.unique(labels1)))

@@ -42,7 +42,7 @@ tf.config.set_soft_device_placement(True)
 # or tasks on the same GPU. config.gpu_options.allow_growth = True ensures that TensorFlow starts by allocating only a small amount of 
 # GPU memory and then increases it as needed. This prevents TensorFlow from hogging all the GPU memory. The tf.compat.v1.Session and 
 # tf.compat.v1.keras.backend.set_session lines are setting this configuration for the TensorFlow session. 
-utils.my_set_session()
+utils.set_session()
 
 
 
@@ -54,9 +54,9 @@ utils.my_set_session()
 # LOAD DATA
 print('\nLoading data...')
 # USI-HEAR
-windows1 = np.load("../../datasets/USI-HEAR_windows_AG.npy")
-clients1 = np.load("../../datasets/USI-HEAR_clients.npy")
-labels1 = np.load("../../datasets/USI-HEAR_labels_combined.npy")
+windows1 = np.load("../../datasets/USI-HEAR_windows_5.npy")
+clients1 = np.load("../../datasets/USI-HEAR_clients_5.npy")
+labels1 = np.load("../../datasets/USI-HEAR_labels_5.npy")
 
 # Print data shape
 print('USI-HEAR shape: {}  {} {} {}'.format(windows1.shape, clients1.shape, labels1.shape,np.unique(labels1)))

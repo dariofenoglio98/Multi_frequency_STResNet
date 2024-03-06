@@ -2,14 +2,14 @@ from sklearn.metrics import accuracy_score, f1_score
 from tensorflow.keras.losses import SparseCategoricalCrossentropy
 import numpy as np
 import os
-import tensorflow as tf
+
 
 # VARIABLES
 N_REPETITIONS = 10
 USE_GPU = True
 GPU_DEVICE = 1 #GPU id
 LEARNING_RATE = 0.0001
-LEARNING_RATE2 = 0.0001
+LEARNING_RATE2 = 0.00005
 BATCH_SIZE = 128
 NUM_CPUS = 10
 NUM_EPOCHS = 150
@@ -19,6 +19,7 @@ TRAINING_VERBOSE = 1
 CALLBACK_VERBOSE = 1
 LOSS = SparseCategoricalCrossentropy()
 SEEDS = [42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56]
+EP_SCHEDULER = 10000 # not used
 
 # PATHS
 LOGDIR = f"Results/Results_CL_40Hz_all/"
@@ -42,9 +43,9 @@ def test_on_one_dataset_mean(model, windows, labels):
 
 # Define the ReduceLROnPlateau callback
 def scheduler(epoch, lr):
-    if epoch < 20000:
+    if epoch < EP_SCHEDULER:
         return LEARNING_RATE
     else:
-        return LEARNING_RATE/10
+        return LEARNING_RATE2
 
 

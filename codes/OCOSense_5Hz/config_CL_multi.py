@@ -1,19 +1,17 @@
 from sklearn.metrics import accuracy_score, f1_score
 from tensorflow.keras.losses import SparseCategoricalCrossentropy
-import tensorflow as tf
 import numpy as np
 import os
-
 
 
 # VARIABLES
 N_REPETITIONS = 10
 USE_GPU = True
-GPU_DEVICE=1 #GPU id
+GPU_DEVICE = 1 #GPU id
 LEARNING_RATE = 0.0001
-LEARNING_RATE2 = 0.0005
+LEARNING_RATE2 = 0.00005
 BATCH_SIZE = 128
-NUM_CPUS = 2
+NUM_CPUS = 10
 NUM_EPOCHS = 400
 NUM_THREADS = NUM_CPUS
 PATIENCE = 150
@@ -21,7 +19,7 @@ TRAINING_VERBOSE = 1
 CALLBACK_VERBOSE = 1
 LOSS = SparseCategoricalCrossentropy()
 SEEDS = [42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56]
-EP_SCHEDULER = 1000 # not used
+EP_SCHEDULER = 10000 # not used
 
 # PATHS
 LOGDIR = f"Results/Results_CL_multi_freq/"

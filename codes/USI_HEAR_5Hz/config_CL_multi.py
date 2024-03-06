@@ -3,14 +3,16 @@ from tensorflow.keras.losses import SparseCategoricalCrossentropy
 import numpy as np
 import os
 
+
 # VARIABLES
 N_REPETITIONS = 10
 USE_GPU = True
-GPU_DEVICE=-1 #GPU id
+GPU_DEVICE = 1 #GPU id
 LEARNING_RATE = 0.0001
 LEARNING_RATE2 = 0.00005
 BATCH_SIZE = 512
-NUM_CPUS = 4
+EP_SCHEDULER = 10000 # not used
+NUM_CPUS = 10
 NUM_EPOCHS = 300
 NUM_THREADS = NUM_CPUS
 PATIENCE = 150
@@ -41,7 +43,7 @@ def test_on_one_dataset_mean(model, windows, labels):
 
 # Define the ReduceLROnPlateau callback
 def scheduler(epoch, lr):
-    if epoch < 100:
+    if epoch < EP_SCHEDULER:
         return LEARNING_RATE
     else:
         return LEARNING_RATE2

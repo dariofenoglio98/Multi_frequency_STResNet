@@ -56,9 +56,9 @@ utils.set_session(cfg.USE_GPU, cfg.GPU_DEVICE)
 # LOAD DATA
 print('\nLoading data...')
 # USI-HEAR
-windows2 = np.load("../../datasets/OCOSense_windows_AG.npy")
-clients2 = np.load("../../datasets/OCOSense_clients.npy")
-labels2 = np.load("../../datasets/OCOSense_labels_combined.npy")
+windows2 = np.load("../../datasets/OCOSense_windows_5.npy")
+clients2 = np.load("../../datasets/OCOSense_clients_5.npy")
+labels2 = np.load("../../datasets/OCOSense_labels_5.npy")
 
 # Print data shape
 print('OCOSense shape: {} {} {} {}'.format(windows2.shape, clients2.shape, labels2.shape, np.unique(labels2)))
