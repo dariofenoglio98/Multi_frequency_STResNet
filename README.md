@@ -62,5 +62,5 @@ The repository includes scripts for each experiment:
 - `CL_multi_freq_training.py`: K-Fold validation across all participants with original sampling frequencies.
 
 ## How to Run
-Set parameters in `config.py` then execute with: `python *chosen_code*.py`.
+Set parameters in `config.py` then execute with: `python [chosen_code].py`.
 
