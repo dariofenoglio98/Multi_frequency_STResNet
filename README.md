@@ -12,7 +12,7 @@ This repository complements the study ['Multi-frequency Federated Learning for H
 
 ## Datasets
 The methodology was validated using two datasets, each involving participants performing seven distinct physical activities:
-- **USI-HEAR**: Collected from 30 participants using eSense earbuds, featuring a 6-axis IMU sensor (3-axis accelerometer and gyroscope). The original dataset can be accessed [here](<link-to-USI-HEAR-dataset>).
+- **USI-HEAR**: Collected from 30 participants using eSense earbuds, featuring a 6-axis IMU sensor (3-axis accelerometer and gyroscope). The original dataset can be accessed [here](https://doi.org/10.5281/zenodo.10843791).
 - **OCOSense**: Gathered from 24 participants via Emteq Labs' OCOSense Smart Glasses, equipped with multiple sensors including a 3-axis accelerometer, gyroscope, magnetometer, and a pressure sensor. The original dataset can be accessed for preprocessing [here](https://www.kaggle.com/datasets/emteqlabs/emteq-ocosense-smart-glasses-har-data?resource=download).
 
 Note: In this repository, we have uploaded two example datasets for demonstration purposes. These are not the ones used in the paper.
